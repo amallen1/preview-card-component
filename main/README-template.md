@@ -60,7 +60,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned how to more effectively use CSS grid to lay things out.
+I also learned how to adjust an image within a card container div using CSS grid.
+
 
 To see how you can add code snippets, see below:
 

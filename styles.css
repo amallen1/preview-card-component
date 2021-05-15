@@ -30,14 +30,65 @@ body {
 }
 
 .card {
-  height: 500px;
-  width: 300px;
-  background-color: white;
-  border-radius: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px;
+      grid-template-columns: 300px;
+  -ms-grid-rows: 210px auto 80px;
+      grid-template-rows: 210px auto 80px;
+      grid-template-areas: "image" "text" "stats";
+  font-family: "Inter", sans-serif;
+  border-radius: 18px;
+  background-color: #1b1938;
+  color: white;
 }
 
 .card-image {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: image;
   background-image: url(images/image-header-mobile.jpg);
-  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-size: cover;
+}
+
+.card-image .color-overlay {
+  width: 100%;
+  height: 100%;
+  background: #aa5cdb;
+  opacity: 0.7;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-filter: saturate(150%);
+          filter: saturate(150%);
+}
+
+.card-text {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+  text-align: center;
+}
+
+.card-text .heading {
+  padding: 30px 30px 10px 30px;
+}
+
+.card-text .heading span {
+  color: #aa5cdb;
+}
+
+.card-text .tagline {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.card-stats {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: stats;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
