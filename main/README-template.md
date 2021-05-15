@@ -62,6 +62,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 I learned how to more effectively use CSS grid to lay things out.
 I also learned how to adjust an image within a card container div using CSS grid.
+I also learned how to organize my CSS code by using the preprocessor SCSS. It really made my code easy to read and neat.
 
 
 To see how you can add code snippets, see below:
