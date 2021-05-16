@@ -101,7 +101,8 @@ body {
         grid-template-columns: 400px 400px;
         grid-template-rows: 200px;
         grid-template-areas: "text"  "stats" "image";
-        flex-direction: row;
+        border-bottom-right-radius: 10px;
+
     }
 
     //reposition the card grid area
@@ -110,7 +111,14 @@ body {
         grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 3;
-        
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 0px;
+        .color-overlay{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 0px;
+        }
     }
 
 }

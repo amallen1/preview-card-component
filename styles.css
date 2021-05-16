@@ -128,10 +128,7 @@ body {
     -ms-grid-rows: 200px;
         grid-template-rows: 200px;
         grid-template-areas: "text"  "stats" "image";
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    border-bottom-right-radius: 10px;
   }
   .card-image {
     -ms-grid-column: 2;
@@ -140,6 +137,14 @@ body {
     -ms-grid-row: 1;
         grid-row-start: 1;
     grid-row-end: 3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+  .card-image .color-overlay {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
