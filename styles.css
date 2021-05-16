@@ -91,12 +91,14 @@ body {
   -ms-grid-column: 1;
   grid-area: stats;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 700;
 }
 
-.card-stats .stat-1, .card-stats .stat-2, .card-stats .stat-3 {
+.card-stats .stat-1,
+.card-stats .stat-2,
+.card-stats .stat-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,11 +125,11 @@ body {
   .card {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 500px 400px;
-        grid-template-columns: 500px 400px;
+    -ms-grid-columns: 500px 500px;
+        grid-template-columns: 500px 500px;
     -ms-grid-rows: 300px;
         grid-template-rows: 300px;
-        grid-template-areas: "text"  "stats" "image";
+        grid-template-areas: "text" "stats" "image";
     border-bottom-right-radius: 10px;
   }
   .card-text {
@@ -139,7 +141,8 @@ body {
   .card-text .tagline {
     margin-left: 10px;
   }
-  .card-text, .card-stats {
+  .card-text,
+  .card-stats {
     text-align: left;
   }
   .card-stats {
@@ -149,6 +152,13 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    padding: 0px 40px 50px 40px;
+  }
+  .card-stats .stat-1,
+  .card-stats .stat-2,
+  .card-stats .stat-3 {
+    position: relative;
+    right: 20px;
   }
   .card-image {
     -ms-grid-column: 2;
