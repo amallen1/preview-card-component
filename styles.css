@@ -123,12 +123,32 @@ body {
   .card {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 400px 400px;
-        grid-template-columns: 400px 400px;
-    -ms-grid-rows: 200px;
-        grid-template-rows: 200px;
+    -ms-grid-columns: 500px 400px;
+        grid-template-columns: 500px 400px;
+    -ms-grid-rows: 300px;
+        grid-template-rows: 300px;
         grid-template-areas: "text"  "stats" "image";
     border-bottom-right-radius: 10px;
+  }
+  .card-text {
+    padding: 40px;
+  }
+  .card-text .heading {
+    font-size: 30px;
+  }
+  .card-text .tagline {
+    margin-left: 10px;
+  }
+  .card-text, .card-stats {
+    text-align: left;
+  }
+  .card-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .card-image {
     -ms-grid-column: 2;
