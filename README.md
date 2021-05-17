@@ -30,7 +30,9 @@ View the optimal layout depending on their device's screen size. The designs are
 
 Mobile Version:
 
+
 Desktop Version:
+
 
 
 ### Links
