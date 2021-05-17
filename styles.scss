@@ -96,7 +96,7 @@ body {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1000px) {
   .card {
     display: grid;
     grid-template-columns: 500px 500px;
@@ -107,7 +107,7 @@ body {
 
   .card-text {
     padding: 40px;
-    
+
     .heading {
       font-size: 30px;
     }
