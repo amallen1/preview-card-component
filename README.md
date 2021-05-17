@@ -35,8 +35,8 @@ Desktop Version:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/amallen1/preview-card-component)
-- Live Site URL: [Add live site URL here](https://friendly-haibt-d2d7fc.netlify.app/)
+- Solution URL: [https://github.com/amallen1/preview-card-component]
+- Live Site URL: [https://friendly-haibt-d2d7fc.netlify.app/]
 
 ## My process
 
