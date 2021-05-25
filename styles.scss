@@ -35,7 +35,7 @@ body {
 .card {
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: 210px auto 240px;
+  grid-template-rows: 230px auto 240px;
   grid-template-areas: "image" "text" "stats";
 
   font-family: "Inter", sans-serif;
@@ -52,10 +52,11 @@ body {
   background-size: cover;
 
   .color-overlay {
+    background-color: $accent;
+    mix-blend-mode: multiply;
+    opacity: 0.85;
     width: 100%;
     height: 100%;
-    background: $accent;
-    mix-blend-mode: multiply;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
