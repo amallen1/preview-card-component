@@ -1,3 +1,13 @@
+//card colors
+$main-background: hsl(233, 47%, 7%);
+$card-background: hsl(244, 38%, 16%);
+$accent: hsl(277, 64%, 61%);
+
+//typography colors
+$main-heading: hsl(0, 0%, 100%);
+$main-paragraph: hsla(0, 0%, 100%, 0.75);
+$stat-headings: hsla(0, 0%, 100%, 0.6);
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +25,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: hsl(233, 47%, 7%);
+  background-color: $main-background;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,7 +39,7 @@ body {
 
   font-family: "Inter", sans-serif;
   border-radius: 7px;
-  background-color: hsl(244, 38%, 16%);
+  background-color: $card-background;
   color: white;
 }
 
@@ -43,7 +53,7 @@ body {
   .color-overlay {
     width: 100%;
     height: 100%;
-    background: hsl(277, 64%, 61%);
+    background: $accent;
     opacity: 0.5;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -60,11 +70,11 @@ body {
   }
 
   .heading span {
-    color: hsl(277, 64%, 61%);
+    color: $accent;
   }
 
   .tagline {
-    color: hsla(0, 0%, 100%, 0.75);
+    color: $main-paragraph;
     font-size: 15px;
     padding: 10px 20px;
     line-height: 30px;
@@ -87,7 +97,7 @@ body {
     margin-top: 20px;
   }
   span {
-    color: hsla(0, 0%, 100%, 0.6);
+    color: $stat-headings;
     font-size: 12px;
     margin-top: 10px;
     text-transform: uppercase;
@@ -138,7 +148,7 @@ body {
   //reposition the card grid area
   .card-image {
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
     border-top-right-radius: 10px;
