@@ -29,9 +29,10 @@ View the optimal layout depending on their device's screen size. The designs are
 ### Screenshot
 
 Mobile Version:
-
+<img src="/images/mobile-design.png" width="300"/>
 
 Desktop Version:
+<img src="/images/desktop-design.png" width="500">
 
 
 
