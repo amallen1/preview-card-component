@@ -1,10 +1,9 @@
-//Variables
-//Card colors
+/*Variables*/
 $main-background: hsl(233, 47%, 7%);
 $card-background: hsl(244, 38%, 16%);
 $accent: hsl(277, 64%, 61%);
 
-//Typography colors
+/*Typography Colors*/
 $main-heading: hsl(0, 0%, 100%);
 $main-paragraph: hsla(0, 0%, 100%, 0.75);
 $stat-headings: hsla(0, 0%, 100%, 0.6);
@@ -16,18 +15,26 @@ $stat-headings: hsla(0, 0%, 100%, 0.6);
 }
 
 .attribution {
+  margin-top: 10px;
   font-size: 11px;
   text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+  .attr {
+    color: white;
+  }
+
+   a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
+
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: $main-background;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -35,7 +42,7 @@ body {
 .card {
   display: grid;
   grid-template-columns: 300px;
-  grid-template-rows: 230px auto 240px;
+  grid-template-rows: 190px auto 240px;
   grid-template-areas: "image" "text" "stats";
 
   font-family: "Inter", sans-serif;
@@ -108,6 +115,11 @@ body {
 }
 
 @media (min-width: 1000px) {
+
+  html {
+    height: 100%;
+  }
+
   .card {
     display: grid;
     grid-template-columns: 500px 500px;
