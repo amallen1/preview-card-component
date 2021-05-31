@@ -44,7 +44,7 @@ Desktop Version:
 
 ### Built with
 
-- Semantic HTML5 markup
+- HTML
 - SCSS 
 - Flexbox
 - CSS Grid
@@ -52,7 +52,7 @@ Desktop Version:
 
 ### What I learned
 
-This project has helped to reinforce and solidify my abilities when it comes to looking at a design and recreating it for mobile and desktop using HTML and CSS. Thanks to this project I learned to understand the importance of building a webpage using a mobile-first workflow. Recreating the design for mobile first made it easy to do the same with the desktop version. Additionally, I learned how to more effectively use CSS grid to divide parts of the page out, and using the preprocessor SCSS helped to organized my CSS code and make it tidy and effortless to read.
+This project has helped to reinforce and solidify my abilities when it comes to looking at a design and recreating it using a mobile first workflow for mobile using HTML and CSS. Additionally, I learned how to more effectively use CSS grid to divide parts of the page out, and using the preprocessor SCSS helped to organized my CSS code and make it tidy and effortless to read.
 
 ### Continued development
 
