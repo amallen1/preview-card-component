@@ -27,6 +27,7 @@ $stat-headings: hsla(0, 0%, 100%, 0.6);
 //   }
 // }
 
+// -- General styling
 body {
   width: 100%;
   height: 100%;
@@ -35,73 +36,135 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
 
+img {
+  //height: 100%;
+  //mix-blend-mode: multiply;
+}
+
+// -- Typography
+
+.heading {
+  color: $main-heading;
+  font-size: 1.8rem;
+
+  .highlight {
+    color: $accent-clr;
+  }
+}
+
+.text {
+  color: $main-paragraph;
+}
+
+.card-stats {
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  .stat {
+    color: #fff;
+
+    span {
+      color: $stat-headings;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+  }
+}
+
+// -- Layout
 .card {
   background-color: $card-background;
   border-radius: 0.5em;
   margin: 2em 1.5em;
-  color: #fff;
 }
 
-
 .card-image {
+  position: relative;
+}
 
-  .mobile-img {
-    width: 100%;
-    max-width: 400px;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-    
+.mobile-img {
+  border-top-left-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: $accent-clr;
+  opacity: .8;
+  mix-blend-mode: multiply;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.card-text {
+  text-align: center;
+  padding: 2em;
+
+  .heading {
+    margin-bottom: 0.5em;
+  }
+
+  .text {
+    margin-bottom: 2em;
+    line-height: 1.7;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+
+    span {
+      margin-top: 0.5em;
+    }
   }
 }
 
-// .card-text,
-// .card-stats {
-//   margin: 0em 2em;
-//   text-align: center;
-// }
-
-// .card-text {
-//   span {
-//     color: $accent-clr;
-//   }
-
-//   .heading {
-//     margin: 1.5em 0em;
-//     color: $main-heading;
-//   }
-
-//   .tagline {
-//     line-height: 1.7;
-//     color: $main-paragraph;
-//   }
-// }
-
-// .card-stats {
-//   font-size: 1.3rem;
-//   font-weight: 700;
-
-//   .stat {
-//     display: flex;
-//     justify-content: center;
-//     flex-direction: column;
-//     margin: 1.8em 0em;
-//   }
-
-//   span {
-//     color: $stat-headings;
-//     text-transform: uppercase;
-//     letter-spacing: 1px;
-//     font-weight: 400;
-//     font-size: 0.8rem;
-//   }
-// }
-
-@media (min-width: 450px) {
+@media (min-width: 805px) {
   body {
     min-height: 100vh;
   }
+
   .card {
+    display: flex;
+    max-width: 870px;
+  }
+
+  .card-image {
+    order: -2;
+    width: 100%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    height: 330px;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
+
+  .card-text {
+    order: -3;
+  }
+
+  .card-stats {
+    display: flex;
+    .stat {  
+      margin-right: 2em;
+    }
   }
 }

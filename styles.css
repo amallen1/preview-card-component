@@ -23,25 +23,135 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.heading {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.heading .highlight {
+  color: #aa5cdb;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.card-stats {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card-stats .stat {
+  color: #fff;
+}
+
+.card-stats .stat span {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .card {
   background-color: #1b1938;
   border-radius: 0.5em;
   margin: 2em 1.5em;
-  color: #fff;
 }
 
-.card-image .mobile-img {
-  width: 100%;
-  max-width: 400px;
+.card-image {
+  position: relative;
+}
+
+.mobile-img {
   border-top-left-radius: 0.5em;
   border-top-right-radius: 0.5em;
+  width: 100%;
 }
 
-@media (min-width: 450px) {
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #aa5cdb;
+  opacity: .8;
+  mix-blend-mode: multiply;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.card-text {
+  text-align: center;
+  padding: 2em;
+}
+
+.card-text .heading {
+  margin-bottom: 0.5em;
+}
+
+.card-text .text {
+  margin-bottom: 2em;
+  line-height: 1.7;
+}
+
+.card-text .stat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.card-text .stat span {
+  margin-top: 0.5em;
+}
+
+@media (min-width: 805px) {
   body {
     min-height: 100vh;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 870px;
+  }
+  .card-image {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+    width: 100%;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    height: 330px;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+  }
+  .card-text {
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+  }
+  .card-stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .card-stats .stat {
+    margin-right: 2em;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -11,16 +10,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-    <!-- google fonts: inter -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- google fonts: lexend deca -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
       rel="stylesheet"
@@ -31,17 +26,26 @@
 
   <body>
     <div class="card">
-
-      
       <div class="card-image">
-        <img class="mobile-img" src="images/image-header-mobile.jpg" />
+        <div class="overlay"></div>
+        <img
+          class="mobile-img"
+          src="images/image-header-mobile.jpg"
+          alt="women working at desk"
+        />
+        <img
+          class="desktop-img"
+          src="/images/image-header-desktop.jpg"
+          alt="women working at desk"
+        />
       </div>
 
       <div class="card-text">
-        <h2 class="heading">
-          Get <span>insights</span> that help your business grow.
-        </h2>
-        <p class="tagline">
+        <h1 class="heading">
+          Get <span class="highlight">insights</span> that help your business
+          grow.
+        </h1>
+        <p class="text">
           Discover the benefits of data analytics and make better decisions
           regarding revenue, customer experience, and overall efficiency.
         </p>
@@ -52,8 +56,6 @@
           <p class="stat">12M+ <span>queries</span></p>
         </div>
       </div>
-
-
     </div>
   </body>
 </html>
