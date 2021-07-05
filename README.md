@@ -48,16 +48,16 @@ Desktop Version:
 - HTML
 - SCSS 
 - Flexbox
-- CSS Grid
+- CSS Grid (used initially but decided not to use the second time around)
 - Mobile-first workflow
 
 ### What I learned
 
-This project has helped to reinforce and solidify my abilities when it comes to looking at a design and recreating it using a mobile first workflow for mobile using HTML and CSS. Additionally, I learned how to more effectively use CSS grid to divide parts of the page out, and using the preprocessor SCSS helped to organized my CSS code and make it tidy and effortless to read.
+This project has helped to reinforce and solidify my abilities when it comes to looking at a design and recreating it using a mobile first workflow using HTML and CSS. Additionally, I learned how to more effectively use CSS grid to divide parts of the page out, and using the preprocessor SCSS helped to organized my CSS code and make it tidy and effortless to read.
 
 ### Continued development
 
-~~
+~~ I realized the first implementation of my code wasn't responsive for all screen sizes. So I redid it from scratch and this time didn't use CSS grid, but the finished product is still resembles the original design and is now responsive for more than devices between sizes of 375 - 1440px.
 
 ### Useful resources
 
